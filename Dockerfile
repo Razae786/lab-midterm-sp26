@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-RUN pip install --no-cache-dir fastapi uvicorn joblib numpy scikit-learn pandas requests
+RUN pip install fastapi uvicorn joblib numpy scikit-learn pandas requests
 COPY app.py .
 COPY metrics.json .
 COPY model.pkl .
